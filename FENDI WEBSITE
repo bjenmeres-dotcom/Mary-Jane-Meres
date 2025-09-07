@@ -1,0 +1,2977 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="ts.css">
+        <title>FENDI</title>
+    </head>
+
+<body>
+  <header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <h1 class="brand">FENDI</h1>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+      <img src="logo.png" alt="FENDI" class="logo">
+      <div>
+        <ul>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="stories.html" class="">Stories</a></li>
+            <li><a href="ts.html" class="">Fashion Show</a></li>
+            <li><a href="contact.html" class="">Contact Us</a></li>
+            <li><a href="about.html" class="active-link">About</a></li>
+        </ul>
+
+        <div class="footer">
+          <a href="https://www.facebook.com/Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icons-facebook-social-media-logo-free-png-removebg-preview.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/fendi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <img src="1-19853_instagram-logo-black-transparent-instagram-logo-black-png-removebg-preview.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@fendi?_t=ZS-8ykreBlo5Mf& r=1" target="_blank" rel="noopener noreferrer">
+            <img src="tiktok-black-icon-logo-png_seeklogo-429281-removebg-preview.png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/@Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_9-removebg-preview.png" alt="youtube">
+          </a>
+        </div>
+          <p>&copy; THIS WEBSITE IS FOR PROJECT PURPOSES ONLY.</p>
+      </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+
+      <script src="script.js"></script>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="videoframe_728.png" alt="Fendi Fall Winter Show" class="hero-img">
+    <div class="hero-text">
+      <h1>Women's and Men's Fall/Winter 2025–26 Show</h1>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="description">
+    <p>Fendi 100: From flashback to fast forward, Silvia Venturini Fendi activates memories playful and profound...</p>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <h2>Watch the Show</h2>
+    <div class="video-container">
+      <video controls>
+        <source src="5sec-hp-landscape-data.webm" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section class="collection">
+    <h2>All the Looks</h2>
+    <div class="grid">
+      <img src="fendi-fw25-02-1--data.jpg" alt="Look 1">
+      <img src="fendi-fw25-09-1--data1.avif" alt="Look 2">
+      <img src="fendi-fw25-21-1--data2.jpg" alt="Look 3">
+      <img src="fendi-fw25-23-1--data3.jpg" alt="Look 4">
+      <img src="fendi-fw25-36-1--data4.jpg" alt="Look 5">
+      <img src="fendi-fw25-47-1--data5.jpg" alt="Look 6">
+    </div>
+<div class="button-container">
+    <button id="discoverBtn">Discover more</button>
+  </div>
+
+    <section class="slider-section">
+  <div class="slider-container" id="slider1">
+    <div class="slides">
+      <img src="spy.jpg" alt="Fendi Spy Bag">
+      <img src="spy2.jpg" alt="Fendi Spy Bag">
+      <img src="spy3.jpg" alt="Fendi Spy Bag">
+    </div>
+    <button class="prev" onclick="prevSlide('slider1')">&#10094;</button>
+    <button class="next" onclick="nextSlide('slider1')">&#10095;</button>
+  </div>
+  <div class="text-box">
+    <h2>Fendi Spy</h2>
+    <p>Launched in 2005, the Fendi Spy Bag returns deconstructed with a twisted handle in sorbet tones, joining the Peekaboo and Baguette as a House icon.</p>
+  </div>
+</section>
+
+<!-- Second Section -->
+<section class="slider-section">
+  <div class="text-box">
+    <h2>Go Behind The Scenes</h2>
+    <p>Go behind the scenes of the Fendi runway to discover the finishing touches and exclusive images before and after the show.</p>
+  </div>
+  <div class="slider-container" id="slider2">
+    <div class="slides">
+      <img src="gbts.jpg" alt="Backstage">
+      <img src="gbts2.avif" alt="Backstage">
+      <img src="gbts3.avif" alt="Backstage">
+    </div>
+    <button class="prev" onclick="prevSlide('slider2')">&#10094;</button>
+    <button class="next" onclick="nextSlide('slider2')">&#10095;</button>
+  </div>
+</section>
+
+<!-- The Set Section -->
+<section class="set-section">
+  <h2>The Set</h2>
+  <p>
+    A mirage revisiting the historic salons of the Fendi boutique and atelier on Via Borgognona in Rome where the 5 Fendi sisters worked and played.
+  </p>
+  <p>
+    A space that hosted alta sartoria clients by day and the glittering jetset of Cinecittà at night, where secrets and stories were passed down from generation to generation.
+  </p>
+  <div class="wide-image">
+    <img src="set.jpg" alt="The Set">
+  </div>
+</section>
+  </section>
+  </body>
+
+</html>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.background{
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    transform: translateY(50px);
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+header{
+    display: flex;
+    align-items: top center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    width: 1600px;
+    position: fixed;
+}
+.brand{
+    margin-left: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(to bottom, #ffffff, #1d74c5);
+    color: black;
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.sidebar.active{
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.active-link{
+    color: black;
+}
+.active-link::after{
+    width: 100% !important;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) ;
+    display: none;
+    z-index: 500;
+}
+.overlay.active{
+    display: block;
+}
+.sidebar .logo{
+    width: 90px;
+    text-align: center;
+    padding-top: -100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 5rem;
+}
+.footer{
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.sidebar.open .footer{
+    padding-left: 20px;
+}
+.footer img{
+    width: 28px;
+    height: 28px;
+}
+p{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    text-align: center;
+}
+.about-section {
+  background:  linear-gradient(to bottom, #ffffff, #0073e6);
+  height: 999px;
+  padding: 50px 20px;
+  font-family: 'Georgia', serif;
+  margin-top: 90px;
+}
+
+.about-container {
+  max-width: 1350px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.h1{
+    top: 900px;
+}
+
+.about-container h2 {
+  font-size: 32px;
+  color: #b89f6b; /* Gold tone */
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-container p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.about-container strong {
+  color: #b89f6b; /* Highlight brand name in gold */
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-img {
+
+  width: 100%;
+  height: auto;
+  background-size: cover;      
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    display: flex;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 70px 20px;
+  border-radius: 8px;
+}
+
+
+.description {
+  padding: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+.description p{
+    font-size: 15px;
+}
+
+.video-section {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.video-container video {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.collection {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+.button-container {
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.slider-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.slider-container {
+  position: relative;
+  width: 45%;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.text-box {
+  width: 45%;
+  max-width: 500px;
+}
+
+.text-box h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.btn {
+  margin-top: 15px;
+  background: white;
+  border: 1px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+.set-section {
+  text-align: center;
+}
+
+.set-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.set-section p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 16px;
+}
+
+.wide-image img {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .slider-section {
+    flex-direction: column;
+  }
+
+  .slider-container, .text-box {
+    width: 90%;
+  }
+}
+
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+});
+button.addEventListener("click", () => {
+    button.classList.toggle("active");
+})
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="about.css">
+        <title>FENDI</title>
+    </head>
+
+<body>
+  <header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <h1 class="brand">FENDI</h1>
+  </header>
+
+  <section class="about-section">
+  <div class="about-container">
+    <h2>About Fendi</h2>
+    <p>
+      Founded in Rome in 1925, <strong>Fendi</strong> is an iconic luxury fashion house celebrated for its impeccable craftsmanship, innovative designs, and timeless elegance. From its origins as a family-run fur and leather shop, Fendi has evolved into a global symbol of Italian sophistication, blending tradition with modern creativity. Known for its signature Baguette bag, cutting-edge ready-to-wear collections, and exquisite accessories, Fendi continues to redefine style while honoring its rich heritage. Every piece is a testament to artistry, quality, and the bold spirit of Roman luxury.
+
+      Fendi is an Italian luxury fashion house founded in Rome in 1925 by Adele and Edoardo Fendi. Originally starting as a fur and leather shop, it has since evolved into a global icon of style, sophistication, and craftsmanship.
+
+Known for its innovative designs, superior quality, and timeless elegance, Fendi offers a wide range of products including handbags, ready-to-wear clothing, shoes, leather goods, fragrances, and accessories.
+
+Signature Features<br>
+
+The Baguette Bag – A fashion icon since 1997, symbolizing effortless luxury.
+
+The FF Logo – Also known as “Zucca” or “FF” logo, designed by Karl Lagerfeld in 1965.<br>
+
+Innovative Craftsmanship – Blending traditional techniques with modern creativity.
+
+Heritage and Innovation
+
+Fendi’s philosophy embraces a deep respect for Italian craftsmanship, while continuously experimenting with bold creativity and modern trends. Karl Lagerfeld, who served as the creative director for over 50 years, played a key role in defining Fendi’s image, alongside Silvia Venturini Fendi.
+
+Global Presence
+
+Today, Fendi is part of the LVMH Group (Moët Hennessy Louis Vuitton) and has boutiques in major fashion capitals worldwide, including Rome, Paris, New York, Tokyo, and Hong Kong.
+    </p>
+  </div>
+</section>
+</body>
+
+
+    <nav class="sidebar" id="sidebar">
+      <img src="logo.png" alt="FENDI" class="logo">
+      <div>
+        <ul>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="stories.html" class="">Stories</a></li>
+            <li><a href="ts.html" class="">Fashion Show</a></li>
+            <li><a href="contact.html" class="">Contact Us</a></li>
+            <li><a href="about.html" class="active-link">About</a></li>
+        </ul>
+
+        <div class="footer">
+          <a href="https://www.facebook.com/Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icons-facebook-social-media-logo-free-png-removebg-preview.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/fendi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <img src="1-19853_instagram-logo-black-transparent-instagram-logo-black-png-removebg-preview.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@fendi?_t=ZS-8ykreBlo5Mf& r=1" target="_blank" rel="noopener noreferrer">
+            <img src="tiktok-black-icon-logo-png_seeklogo-429281-removebg-preview.png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/@Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_9-removebg-preview.png" alt="youtube">
+          </a>
+        </div>
+          <p>&copy; THIS WEBSITE IS FOR PROJECT PURPOSES ONLY.</p>
+      </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+</body>
+
+      <script src="script.js"></script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="contact.css">
+        <title>FENDI</title>
+    </head>
+
+
+  <header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <h1 class="brand">FENDI</h1>
+  </header>
+
+  <div class="scroll-box">
+    <img src="ContactIntro.jpg" alt="img">
+    <h2>Contact Us</h2>
+    <p> Please find below our worldwide Client Services numbers and hours of service. You may also send us an email by filling in the form below and we'll get back to you as soon as possible.</p>
+    <p>AFRICA AND EUROPE
+      <br>
+      +39 0633450130 - Mon-Fri 10am - 7:00pm CET
+    </p>
+    <p>ASIA
+      <br>
+      Macau: +853 62626558
+      <br>
+      Mon-Fri 10am - 7pm CST
+      <br>
+      Thailand: 1800018056
+      <br>
+      Philippine: 09939285187
+      <br>
+      All other countries: +65 31051649
+      <br>
+      Mon-Fri 10am - 7pm SGT
+    </p>
+    <p>MIDDLE EAST AND INDIA
+      <br>
+      +971 (0) 45634090 - Mon-Fri 11.00-20.00 GST
+    </p>
+    <p>AMERICAS
+      <br>
+      (+1) 8882910163​​​​​​​ (Mon-Fri 9am to 9pm EDT, Sat-Sun 9am to 6pm EDT)
+    </p>
+  </div>
+
+</form>
+  </div>
+    <nav class="sidebar" id="sidebar">
+      <img src="logo.png" alt="FENDI" class="logo">
+      <div>
+        <ul>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="stories.html" class="">Stories</a></li>
+            <li><a href="ts.html" class="">Fashion Show</a></li>
+            <li><a href="contact.html" class="active-link">Contact Us</a></li>
+            <li><a href="about.html" class="">About</a></li>
+        </ul>
+
+        <div class="footer">
+          <a href="https://www.facebook.com/Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icons-facebook-social-media-logo-free-png-removebg-preview.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/fendi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <img src="1-19853_instagram-logo-black-transparent-instagram-logo-black-png-removebg-preview.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@fendi?_t=ZS-8ykreBlo5Mf& r=1" target="_blank" rel="noopener noreferrer">
+            <img src="tiktok-black-icon-logo-png_seeklogo-429281-removebg-preview.png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/@Fendi/" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_9-removebg-preview.png" alt="youtube">
+          </a>
+        </div>
+        <div class="copy">
+          <p>&copy; THIS WEBSITE IS FOR PROJECT PURPOSES ONLY.</p>
+        </div>
+      </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+
+      <script src="script.js"></script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stories.css">
+        <title>FENDI</title>
+    </head>
+
+<body>
+  <header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <h1 class="brand">FENDI</h1>
+  </header>
+
+    <nav class="sidebar" id="sidebar">
+      <img src="logo.png" alt="FENDI" class="logo">
+      <div>
+        <ul>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="stories.html" class="active-link">Stories</a></li>
+            <li><a href="ts.html" class="">Fashion Show</a></li>
+            <li><a href="contact.html" class="">Contact Us</a></li>
+            <li><a href="about.html" class="">About</a></li>
+        </ul>
+
+        <div class="footer">
+          <a href="https://www.facebook.com/Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icons-facebook-social-media-logo-free-png-removebg-preview.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/fendi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <img src="1-19853_instagram-logo-black-transparent-instagram-logo-black-png-removebg-preview.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@fendi?_t=ZS-8ykreBlo5Mf& r=1" target="_blank" rel="noopener noreferrer">
+            <img src="tiktok-black-icon-logo-png_seeklogo-429281-removebg-preview.png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/@Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_9-removebg-preview.png" alt="youtube">
+          </a>
+        </div>
+          <p>&copy; THIS WEBSITE IS FOR PROJECT PURPOSES ONLY.</p>
+      </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+</body>
+
+      <script src="script.js"></script>
+
+      <body>
+        <div class="scroll-image-container">
+          <img src="stories.png" alt="scroll-image">
+        </div>
+      </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="lifestyle.css">
+        <title>FENDI</title>
+    </head>
+
+
+  <header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <h1 class="brand">FENDI</h1>
+  </header>
+
+  </div>
+
+     
+   
+
+
+    <nav class="sidebar" id="sidebar">
+      <img src="logo.png" alt="FENDI" class="logo">
+      <div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="stories.html" class="">Stories</a></li>
+            <li><a href="ts.html" class="">Fashion Show</a></li>
+            <li><a href="contact.html" class="">Contact Us</a></li>
+            <li><a href="about.html" class="">About</a></li>
+        </ul>
+      
+        <div class="footer">
+          <a href="https://www.facebook.com/Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icons-facebook-social-media-logo-free-png-removebg-preview.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/fendi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <img src="1-19853_instagram-logo-black-transparent-instagram-logo-black-png-removebg-preview.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@fendi?_t=ZS-8ykreBlo5Mf& r=1" target="_blank" rel="noopener noreferrer">
+            <img src="tiktok-black-icon-logo-png_seeklogo-429281-removebg-preview.png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/@Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_9-removebg-preview.png" alt="youtube">
+          </a>
+        </div>
+          <p>&copy; THIS WEBSITE IS FOR PROJECT PURPOSES ONLY.</p>
+      </div>
+    </nav>
+
+    <section class="product-grid">
+      <div class="product-card">
+      <img src="peekaboo1.avif" alt="Fendi Lui">
+      <h2>Peekaboo</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="baguette1.avif" alt="Fendi Lui">
+        <h2>Baguette</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="fendispy1.avif" alt="Fendi Lui Large">
+        <h2>Fendi Spy</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="mammabaguette.avif" alt="Fendi Lui Large">
+        <h2>Mamma Baguette</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="bytheway.avif" alt="Fendi Lui Large">
+        <h2>By The Way</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="fendigraphy.avif" alt="Fendi Lui Large">
+        <h2>Fendigraphy</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="summerbag.avif" alt="Fendi Lui Large">
+        <h2>Fendi Summer Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="mini bag.avif" alt="Fendi Lui Large">
+        <h2>Fendi Mini Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="shouldercrossbody.avif" alt="Fendi Lui Large">
+        <h2>Fendi Shoulder & Crossbody Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="totebag.avif" alt="Fendi Lui Large">
+        <h2>Fendi Tote Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="bucket bags.avif" alt="Fendi Lui Large">
+        <h2>Fendi Bucket Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="bostonbag.webp" alt="Fendi Lui Large">
+        <h2>Fendi Boston Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="clutches.webp" alt="Fendi Lui Large">
+        <h2>Fendi Clutches & Pochette</h2>
+    </div>
+
+    </section>
+    </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+      <script src="script.js"></script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="bag2.css">
+        <title>FENDI</title>
+    </head>
+
+
+  <header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <h1 class="brand">FENDI</h1>
+  </header>
+
+  </div>
+
+     
+   
+
+
+    <nav class="sidebar" id="sidebar">
+      <img src="logo.png" alt="FENDI" class="logo">
+      <div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="stories.html" class="">Stories</a></li>
+            <li><a href="ts.html" class="">Fashion Show</a></li>
+            <li><a href="contact.html" class="">Contact Us</a></li>
+            <li><a href="about.html" class="">About</a></li>
+        </ul>
+      
+        <div class="footer">
+          <a href="https://www.facebook.com/Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icons-facebook-social-media-logo-free-png-removebg-preview.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/fendi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <img src="1-19853_instagram-logo-black-transparent-instagram-logo-black-png-removebg-preview.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@fendi?_t=ZS-8ykreBlo5Mf& r=1" target="_blank" rel="noopener noreferrer">
+            <img src="tiktok-black-icon-logo-png_seeklogo-429281-removebg-preview.png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/@Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_9-removebg-preview.png" alt="youtube">
+          </a>
+        </div>
+          <p>&copy; THIS WEBSITE IS FOR PROJECT PURPOSES ONLY.</p>
+      </div>
+    </nav>
+
+    <section class="product-grid">
+      <div class="product-card">
+      <img src="peekaboo1.avif" alt="Fendi Lui">
+      <h2>Peekaboo</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="baguette1.avif" alt="Fendi Lui">
+        <h2>Baguette</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="fendispy1.avif" alt="Fendi Lui Large">
+        <h2>Fendi Spy</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="mammabaguette.avif" alt="Fendi Lui Large">
+        <h2>Mamma Baguette</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="bytheway.avif" alt="Fendi Lui Large">
+        <h2>By The Way</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="fendigraphy.avif" alt="Fendi Lui Large">
+        <h2>Fendigraphy</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="summerbag.avif" alt="Fendi Lui Large">
+        <h2>Fendi Summer Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="mini bag.avif" alt="Fendi Lui Large">
+        <h2>Fendi Mini Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="shouldercrossbody.avif" alt="Fendi Lui Large">
+        <h2>Fendi Shoulder & Crossbody Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="totebag.avif" alt="Fendi Lui Large">
+        <h2>Fendi Tote Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="bucket bags.avif" alt="Fendi Lui Large">
+        <h2>Fendi Bucket Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="bostonbag.webp" alt="Fendi Lui Large">
+        <h2>Fendi Boston Bag</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="clutches.webp" alt="Fendi Lui Large">
+        <h2>Fendi Clutches & Pochette</h2>
+    </div>
+
+    </section>
+    </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+      <script src="bag.js"></script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="bag.css">
+        <title>FENDI</title>
+    </head>
+
+
+  <header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <h1 class="brand">FENDI</h1>
+  </header>
+
+  </div>
+
+     
+   
+
+
+    <nav class="sidebar" id="sidebar">
+      <img src="logo.png" alt="FENDI" class="logo">
+      <div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="stories.html" class="">Stories</a></li>
+            <li><a href="ts.html" class="">Fashion Show</a></li>
+            <li><a href="contact.html" class="">Contact Us</a></li>
+            <li><a href="about.html" class="">About</a></li>
+        </ul>
+      
+        <div class="footer">
+          <a href="https://www.facebook.com/Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icons-facebook-social-media-logo-free-png-removebg-preview.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/fendi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <img src="1-19853_instagram-logo-black-transparent-instagram-logo-black-png-removebg-preview.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@fendi?_t=ZS-8ykreBlo5Mf& r=1" target="_blank" rel="noopener noreferrer">
+            <img src="tiktok-black-icon-logo-png_seeklogo-429281-removebg-preview.png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/@Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_9-removebg-preview.png" alt="youtube">
+          </a>
+        </div>
+          <p>&copy; THIS WEBSITE IS FOR PROJECT PURPOSES ONLY.</p>
+      </div>
+    </nav>
+
+    <section class="product-grid">
+      <div class="product-card">
+      <img src="ciaoamore.avif" alt="Fendi Lui">
+      <h2>Ciao Amore</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="eaux.avif" alt="Fendi Lui">
+        <h2>Eaux D'Artifice</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="perche.jfif" alt="Fendi Lui Large">
+        <h2>Perche No</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="sempre mio.avif" alt="Fendi Lui Large">
+        <h2>Sempre Mio</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="labaguette.webp" alt="Fendi Lui Large">
+        <h2>La Baguette</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="dolce.avif" alt="Fendi Lui Large">
+        <h2>Dolce Bacio</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="casagrande.avif" alt="Fendi Lui Large">
+        <h2>Casa Grande</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="miniature-lifestyle-v3-1920x1080-srgb-300dpi-data.avif" alt="Fendi Lui Large">
+        <h2>Miniatures</h2>
+    </div>
+    </section>
+    </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+      <script src="bag.js"></script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>FENDI</title>
+    </head>
+
+<body>
+  <a href="product.html" class="discover-btn">DISCOVER US</a>
+  <header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <h1 class="brand">FENDI</h1>
+  </header>
+
+    <nav class="sidebar" id="sidebar">
+      <img src="logo.png" alt="FENDI" class="logo">
+      <div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active-link">Home</a></li>
+            <li><a href="stories.html" class="">Stories</a></li>
+            <li><a href="ts.html" class="">Fashion Show</a></li>
+            <li><a href="contact.html" class="">Contact Us</a></li>
+            <li><a href="about.html" class="">About</a></li>
+        </ul>
+
+        <div class="footer">
+          <a href="https://www.facebook.com/Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icons-facebook-social-media-logo-free-png-removebg-preview.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/fendi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <img src="1-19853_instagram-logo-black-transparent-instagram-logo-black-png-removebg-preview.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@fendi?_t=ZS-8ykreBlo5Mf& r=1" target="_blank" rel="noopener noreferrer">
+            <img src="tiktok-black-icon-logo-png_seeklogo-429281-removebg-preview.png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/@Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_9-removebg-preview.png" alt="youtube">
+          </a>
+        </div>
+          <p>&copy; THIS WEBSITE IS FOR PROJECT PURPOSES ONLY.</p>
+      </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+</body>
+
+      <script src="script.js"></script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="product.css">
+        <title>FENDI</title>
+    </head>
+
+<body>
+  <header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <h1 class="brand">FENDI</h1>
+  </header>
+
+    <nav class="sidebar" id="sidebar">
+      <img src="logo.png" alt="FENDI" class="logo">
+      <div>
+    </body>
+        <ul class="nav-links">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="stories.html" class="">Stories</a></li>
+            <li><a href="ts.html" class="">Fashion Show</a></li>
+            <li><a href="contact.html" class="">Contact Us</a></li>
+            <li><a href="about.html" class="">About</a></li>
+        </ul>
+      
+        <div class="footer">
+          <a href="https://www.facebook.com/Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icons-facebook-social-media-logo-free-png-removebg-preview.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/fendi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <img src="1-19853_instagram-logo-black-transparent-instagram-logo-black-png-removebg-preview.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@fendi?_t=ZS-8ykreBlo5Mf& r=1" target="_blank" rel="noopener noreferrer">
+            <img src="tiktok-black-icon-logo-png_seeklogo-429281-removebg-preview.png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/@Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_9-removebg-preview.png" alt="youtube">
+          </a>
+        </div>
+          <p>&copy; THIS WEBSITE IS FOR PROJECT PURPOSES ONLY.</p>
+      </div>
+    </nav>
+    </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="content">
+      <h1>Fendi Men Bags</h1>
+      <p>Fendi Men’s Bags embody the perfect balance of sophistication, functionality, and Italian craftsmanship. Designed for the contemporary man, each piece reflects Fendi’s commitment to innovation, premium materials, and timeless style. From sleek briefcases to versatile crossbody bags and iconic totes, the collection offers refined solutions for everyday elegance, business essentials, and travel sophistication.
+         Whether crafted in supple leather or featuring signature FF details, Fendi men’s bags elevate any look — seamlessly blending practicality with bold, modern luxury.
+        </p>
+        <button><a href="bag.html">See Products</a></button>
+    </section>
+
+    <section class="content">
+      <h1>Fendi Women Bags</h1>
+      <p>Fendi women’s bags embody the perfect blend of Italian craftsmanship, timeless elegance, and modern sophistication. Each piece is meticulously designed using premium materials and distinctive details, reflecting the brand’s heritage of luxury and innovation. From iconic classics to contemporary statement designs, Fendi bags are more than just accessories—they are symbols of confidence, individuality, and refined style for the modern woman.
+      </p>
+        <button><a href="bag2.html">See Products</a></button>
+    </section>
+
+    <section class="content">
+      <h1>Fendi Fragrances</h1>
+      <p>Fendi fragrances capture the spirit of sophistication, elegance, and bold creativity that define the Maison. Each scent is a masterpiece of fine perfumery, blending exquisite notes with timeless style to create an unforgettable olfactory journey. From fresh and vibrant to warm and sensual, Fendi fragrances embody the art of self-expression and the allure of true Italian luxury.
+      </p>
+        <button><a href="fragrance.html">See Products</a></button>
+    </section>
+
+    <section class="content">
+      <h1>Home/Lifestyle</h1>
+      <p>Fendi Home & Lifestyle brings the maison’s signature elegance beyond fashion, creating a world where design meets sophistication. From refined home décor to exclusive lifestyle pieces, each creation reflects Fendi’s heritage of craftsmanship, creativity, and innovation. With luxurious textures, iconic motifs, and timeless style, Fendi transforms everyday living into an expression of art and modern Italian excellence.
+      </p>
+        <button><a href="home/lifestyle.html">See Products</a></button>
+    </section>
+
+    
+
+      <script src="product.js"></script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="bag.css">
+        <title>FENDI</title>
+    </head>
+
+
+  <header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <h1 class="brand">FENDI</h1>
+  </header>
+
+  </div>
+
+     
+   
+
+
+    <nav class="sidebar" id="sidebar">
+      <img src="logo.png" alt="FENDI" class="logo">
+      <div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="stories.html" class="">Stories</a></li>
+            <li><a href="ts.html" class="">Fashion Show</a></li>
+            <li><a href="contact.html" class="">Contact Us</a></li>
+            <li><a href="about.html" class="">About</a></li>
+        </ul>
+      
+        <div class="footer">
+          <a href="https://www.facebook.com/Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="facebook-icons-facebook-social-media-logo-free-png-removebg-preview.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/fendi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <img src="1-19853_instagram-logo-black-transparent-instagram-logo-black-png-removebg-preview.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@fendi?_t=ZS-8ykreBlo5Mf& r=1" target="_blank" rel="noopener noreferrer">
+            <img src="tiktok-black-icon-logo-png_seeklogo-429281-removebg-preview.png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/@Fendi" target="_blank" rel="noopener noreferrer">
+            <img src="youtube_9-removebg-preview.png" alt="youtube">
+          </a>
+        </div>
+          <p>&copy; THIS WEBSITE IS FOR PROJECT PURPOSES ONLY.</p>
+      </div>
+    </nav>
+
+    <section class="product-grid">
+      <div class="product-card">
+      <img src="luismall.avif" alt="Fendi Lui">
+      <h2>Fendi Lui small</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="fflui.png" alt="Fendi Lui">
+        <h2>Squared FF Fendi Lui Medium</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="menluilarge.jpg" alt="Fendi Lui Large">
+        <h2>Fendi Lui Large</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="flux.avif" alt="Fendi Lui Large">
+        <h2>Fendi Flux Maxi Messenger</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="fluxbackpacks.avif" alt="Fendi Lui Large">
+        <h2>Fendi Flux Backpacks</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="Fendi Camera Bag in Black Leather.png" alt="Fendi Lui Large">
+        <h2>Squared FF Camera Case</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="FFclutch.png" alt="Fendi Lui Large">
+        <h2>FF Squared Clutch</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="melonbag.avif" alt="Fendi Lui Large">
+        <h2>Fendi Roma Leather Melon Small</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="jacquard.avif" alt="Fendi Lui Large">
+        <h2>FF Jacquard Melon Small</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="doublebaguette.avif" alt="Fendi Lui Large">
+        <h2>FF Double Baguette</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="fendi-strike-medium-ff-jacquard-backpack-7vz070ag0mf1o97_1.jpg" alt="Fendi Lui Large">
+        <h2>FF Jacquard Fendi Strike Small</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="lMiumnGGJRJdyINwDzQOJ1W8H2tpIy-Ia6podkY_bfUgAKdcgoPDGtN5hj6l8jIT6NWQL1s6sstTEUZ50wsTERftlmxGiIteh8z3g2DnTP12uwRxYfoZ0-_Jnb7XN50JCC0DUBLmWei1R-t0jUUU0Oux46qwJwLGi4dsun8M4q8cXJNekHP5swHTMJlnhhS6Dki_aU.webp" alt="Fendi Lui Large">
+        <h2>FF Jacquard Fendi Strike Large</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="7VA638ARLZF0GXN_04.avif" alt="Fendi Lui Large">
+        <h2>Fendi Siesta Medium Selleria</h2>
+    </div>
+
+    <div class="product-card">
+        <img src="fendi-strike-medium-ff-jacquard-backpack-7vz070ag0mf1o97_1.jpg" alt="Fendi Lui Large">
+        <h2>FF Jacquard Fendi Strike Small</h2>
+    </div>
+
+
+
+    </section>
+    </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+      <script src="bag.js"></script>
+</html>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100px;
+    height: 100px;
+}
+body{
+    color: #000000;
+    display: flex;
+    background-size: none;
+    background-position: top center;
+    position: cover;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.hamburger img{
+    font-size: 2.0rem;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    align-items: top center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    width: 1300px;
+    position: fixed;
+}
+.brand{
+    margin-left: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+.scroll-bar-container{
+    max-width: 1900px;
+    max-height: 643px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid transparent;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(to bottom, #ffffff, #1d74c5);
+    color: black;
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.sidebar.active{
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.active-link{
+    color: black;
+}
+.active-link::after{
+    width: 100% !important;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) ;
+    display: none;
+    z-index: 500;
+}
+.overlay.active{
+    display: block;
+}
+.sidebar .logo{
+    width: 90px;
+    text-align: center;
+    padding-top: -100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 5rem;
+}
+.footer{
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.sidebar.open .footer{
+    padding-left: 20px;
+}
+.footer img{
+    width: 28px;
+    height: 28px;
+}
+p{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  max-width: 1300px;
+  margin-top: 100px;
+  padding-left: 140px;
+}
+
+.product-card {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  max-width: 100%;
+  background-position: center;
+  height: auto;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.banner {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+h2{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 40px;
+    align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100px;
+    height: 100px;
+}
+body{
+    color: #000000;
+    display: flex;
+    background-size: none;
+    background-position: top center;
+    position: cover;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.hamburger img{
+    font-size: 2.0rem;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    align-items: top center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    width: 1300px;
+    position: fixed;
+}
+.brand{
+    margin-left: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+.scroll-bar-container{
+    max-width: 1900px;
+    max-height: 643px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid transparent;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(to bottom, #ffffff, #1d74c5);
+    color: black;
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.sidebar.active{
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.active-link{
+    color: black;
+}
+.active-link::after{
+    width: 100% !important;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) ;
+    display: none;
+    z-index: 500;
+}
+.overlay.active{
+    display: block;
+}
+.sidebar .logo{
+    width: 90px;
+    text-align: center;
+    padding-top: -100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 5rem;
+}
+.footer{
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.sidebar.open .footer{
+    padding-left: 20px;
+}
+.footer img{
+    width: 28px;
+    height: 28px;
+}
+p{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  max-width: 1300px;
+  margin-top: 100px;
+  padding-left: 140px;
+}
+
+.product-card {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  max-width: 100%;
+  background-position: center;
+  height: auto;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.banner {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100px;
+    height: 100px;
+}
+body{
+    color: #000000;
+    display: flex;
+    background-size: none;
+    background-position: top center;
+    position: cover;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.hamburger img{
+    font-size: 2.0rem;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    align-items: top center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    width: 1300px;
+    position: fixed;
+}
+.brand{
+    margin-left: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+.scroll-bar-container{
+    max-width: 1900px;
+    max-height: 643px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid transparent;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(to bottom, #ffffff, #1d74c5);
+    color: black;
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.sidebar.active{
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.active-link{
+    color: black;
+}
+.active-link::after{
+    width: 100% !important;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) ;
+    display: none;
+    z-index: 500;
+}
+.overlay.active{
+    display: block;
+}
+.sidebar .logo{
+    width: 90px;
+    text-align: center;
+    padding-top: -100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 5rem;
+}
+.footer{
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.sidebar.open .footer{
+    padding-left: 20px;
+}
+.footer img{
+    width: 28px;
+    height: 28px;
+}
+p{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  max-width: 1300px;
+  margin-top: 100px;
+  padding-left: 140px;
+}
+
+.product-card {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  max-width: 100%;
+  background-position: center;
+  height: auto;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.banner {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100px;
+    height: 100px;
+}
+body{
+    color: #000000;
+    display: flex;
+    background-size: none;
+    background-position: top center;
+    position: cover;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.hamburger img{
+    font-size: 2.0rem;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    align-items: top center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    width: 1300px;
+    position: fixed;
+}
+.brand{
+    margin-left: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+.scroll-bar-container{
+    max-width: 1900px;
+    max-height: 643px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid transparent;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(to bottom, #ffffff, #1d74c5);
+    color: black;
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.sidebar.active{
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.active-link{
+    color: black;
+}
+.active-link::after{
+    width: 100% !important;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) ;
+    display: none;
+    z-index: 500;
+}
+.overlay.active{
+    display: block;
+}
+.sidebar .logo{
+    width: 90px;
+    text-align: center;
+    padding-top: -100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 5rem;
+}
+.footer{
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.sidebar.open .footer{
+    padding-left: 20px;
+}
+.footer img{
+    width: 28px;
+    height: 28px;
+}
+p{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  max-width: 1300px;
+  margin-top: 100px;
+  padding-left: 140px;
+}
+
+.product-card {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  max-width: 100%;
+  background-position: center;
+  height: auto;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.banner {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+.background{
+
+    width: 100%;
+    height: 90%;
+    transform: translateY(50px);
+}
+body{
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff, #0073e6);
+    color: #000000;
+    background-size: cover;
+    background-position: top center;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.hamburger img{
+    font-size: 2.0rem;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    align-items: top center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    width: 1300px;
+    position: fixed;
+}
+.brand{
+    margin-left: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(to bottom, #ffffff, #1d74c5);
+    color: black;
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.sidebar.active{
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.active-link{
+    color: black;
+}
+.active-link::after{
+    width: 100% !important;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) ;
+    display: none;
+    z-index: 500;
+}
+.overlay.active{
+    display: block;
+}
+.sidebar .logo{
+    width: 90px;
+    text-align: center;
+    padding-top: -100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 5rem;
+}
+.footer{
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.sidebar.open .footer{
+    padding-left: 20px;
+}
+.footer img{
+    width: 28px;
+    height: 28px;
+}
+p{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    text-align: center;
+}
+.content{
+    padding: 0 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000000;
+    height: 60vh;
+}
+.content h1{
+    font-size: 30px;
+}
+.content p{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.content button{
+    margin-top: 30px;
+    padding: 5px 15px;
+    border: none;
+    background: #000000;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button a{
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+
+
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+button.addEventListener("click", () => {
+    button.classList.toggle("active");
+})
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.background{
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    transform: translateY(50px);
+}
+body{
+    background-color: white;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: top center;
+    position: fixed;
+}
+.scroll-image-container{
+    max-width: 1900px;
+    max-height: 643px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid #ccc;
+}
+.scroll-image-container img{
+    display: flex;
+    width: 1335px;
+    height: auto;
+}
+header{
+    display: flex;
+    align-items: top center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    width: 1600px;
+    position: fixed;
+}
+.brand{
+    margin-left: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(to bottom, #ffffff, #1d74c5);
+    color: black;
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.sidebar.active{
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.active-link{
+    color: black;
+}
+.active-link::after{
+    width: 100% !important;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) ;
+    display: none;
+    z-index: 500;
+}
+.overlay.active{
+    display: block;
+}
+.sidebar .logo{
+    width: 90px;
+    text-align: center;
+    padding-top: -100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 5rem;
+}
+.footer{
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.sidebar.open .footer{
+    padding-left: 20px;
+}
+.footer img{
+    width: 28px;
+    height: 28px;
+}
+p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.background{
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    transform: translateY(50px);
+}
+body{
+    background: linear-gradient(to bottom, #ffffff, #0073e6);
+    color: #000000;
+    display: flex;
+    background-size: cover;
+    background-position: top center;
+    position: fixed;
+}
+header{
+    display: flex;
+    align-items: top center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    width: 1600px;
+    position: fixed;
+}
+.brand{
+    margin-left: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(to bottom, #ffffff, #1d74c5);
+    color: black;
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.sidebar.active{
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.active-link{
+    color: black;
+}
+.active-link::after{
+    width: 100% !important;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) ;
+    display: none;
+    z-index: 500;
+}
+.overlay.active{
+    display: block;
+}
+.sidebar .logo{
+    width: 90px;
+    text-align: center;
+    padding-top: -100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 5rem;
+}
+.footer{
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.sidebar.open .footer{
+    padding-left: 20px;
+}
+.footer img{
+    width: 28px;
+    height: 28px;
+}
+p{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    text-align: center;
+}
+.about-section {
+  background:  linear-gradient(to bottom, #ffffff, #0073e6);
+  height: 999px;
+  padding: 50px 20px;
+  font-family: 'Georgia', serif;
+  margin-top: 90px;
+}
+
+.about-container {
+  max-width: 1350px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 32px;
+  color: #b89f6b; /* Gold tone */
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-container p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.about-container strong {
+  color: #b89f6b; /* Highlight brand name in gold */
+}
+
+
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+
+document.getElementById('discoverBtn').addEventListener('click', () => {
+  alert('Discover more about the Fendi Fall/Winter 2025-26 Collection!');
+});
+
+
+function nextSlide(sliderId) {
+  const slider = document.getElementById(slider1).querySelector('.slides');
+  const slideWidth = slider.querySelector('img').clientWidth;
+  slider.style.transform = `translateX(-${slideWidth}px)`;
+}
+
+function prevSlide(sliderId) {
+  const slider = document.getElementById(slider2).querySelector('.slides');
+  slider.style.transform = `translateX(0)`;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.background{
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    transform: translateY(50px);
+}
+body{
+    background-color: white;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: top center;
+    position: fixed;
+}
+header{
+    display: flex;
+    align-items: top center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    width: 1600px;
+    position: fixed;
+}
+.brand{
+    margin-left: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(to bottom, #ffffff, #1d74c5);
+    color: black;
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.sidebar.active{
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.active-link{
+    color: black;
+}
+.active-link::after{
+    width: 100% !important;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) ;
+    display: none;
+    z-index: 500;
+}
+.overlay.active{
+    display: block;
+}
+.sidebar .logo{
+    width: 90px;
+    text-align: center;
+    padding-top: -100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 5rem;
+}
+.footer{
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.sidebar.open .footer{
+    padding-left: 20px;
+}
+.footer img{
+    width: 28px;
+    height: 28px;
+}
+.contactpic{
+    background-position: top center;
+    background-size: cover;
+    width: 1600px;
+    height: 600px;
+    margin-bottom: 100px;
+}
+.scroll-box{
+    height: 1000px;
+    width: 1354px;
+    background: linear-gradient(to bottom, #ffffff, #0073e6);
+    color: black;
+    overflow: auto;
+}
+.scroll-box {
+  max-height: 648px;
+  overflow-y: auto;
+  padding: 0px;
+}
+
+.scroll-box h2{
+    font-size: 35px;
+  margin-top: 2rem;
+  padding: 20px;
+}
+.scroll-box img{
+    width: 1350px;
+    height: 480px;
+    padding: 0px;
+}
+.scroll-box p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    letter-spacing: normal;
+}
+p{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: LEFT;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+.copy p{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ffffff, #0073e6);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+margin-left: 90px;
+}
+
+
+.form-group {   
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #0073e6;
+  box-shadow: 0 0 5px rgba(0,115,230,0.3);
+}
+
+
+.full-width {
+  grid-column: span 2;
+}
+
+
+.contact-form button {
+  background: #0073e6;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #005bb5;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.background{
+
+    width: 100%;
+    height: 90%;
+    transform: translateY(50px);
+}
+body{
+    margin: 0%;
+    color: #000000;
+    background-image: url(FENDI\ THE\ ART\ OF\ ROMANITALY\ LUXURY.png);
+    background-size: cover;      
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    display: flex;
+}
+header{
+    display: flex;
+    align-items: top center;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    width: 1600px;
+    position: fixed;
+}
+.brand{
+    margin-left: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.hamburger{
+    font-size: 28px;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(to bottom, #ffffff, #1d74c5);
+    color: black;
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar ul li{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.sidebar.active{
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.active-link{
+    color: black;
+}
+.active-link::after{
+    width: 100% !important;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) ;
+    display: none;
+    z-index: 500;
+}
+.overlay.active{
+    display: block;
+}
+.sidebar .logo{
+    width: 90px;
+    text-align: center;
+    padding-top: -100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 6px;
+    margin-top: 5rem;
+}
+.footer{
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.sidebar.open .footer{
+    padding-left: 20px;
+}
+.footer img{
+    width: 28px;
+    height: 28px;
+}
+p{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    text-align: center;
+}
+.discover-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', serif;
+  margin-top: 450px;
+  margin-left: 1100px;
+}
+
+.discover-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+// Simple click effect for products
+const products = document.querySelectorAll('.product-card');
+products.forEach(product => {
+  product.addEventListener('click', () => {
+    alert(`You clicked on: ${product.querySelector('p').textContent}`);
+  });
+});
